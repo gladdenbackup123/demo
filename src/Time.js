@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react";
 function Time(){
-    let time = new Date().toLocaleTimeString();
+    const [time,setTime] = useState(new Date().toLocaleTimeString());
+
+    useEffect(()=>{
+        const timer = setInterval(()=>{
+            setTime(new Date().toLocaleTimeString())
+        },1000)
+    },[])
+
     return (
-        <p>The current time is : {time}</p>
+        <h2>The current time is : {time}</h2>
     )
 }
 

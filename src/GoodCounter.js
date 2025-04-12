@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function GoodCounter() {
     const [count,setCount] = useState(0); 
+
+    useEffect(()=>{
+        alert("Your count is "+count)
+
+    },[count]) 
 
     return (
         <div>

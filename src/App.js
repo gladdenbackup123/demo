@@ -16,6 +16,7 @@ import HelloFunctional from './HelloFunctional';
 import HelloClass from './HelloClass';
 import Toggle from './Toggle';
 import UserInput from './UserInput';
+import TitleChange from './TitleChange';
 
 function App() {
   const fruitsList = ["Apple","Banana","Mango","Cherry","Strawberry"];
@@ -28,14 +29,13 @@ function App() {
     <div className="App">
         <Header/>
         <Greet name="Gladden" />
-        <UserInput/>
+        {/* <GoodCounter/> */}
+        <Time/>
+        <TitleChange/>
 
-
+        {/* <UserInput/> */}
         {/* <Toggle/> */}
-
         {/* <BadCounter/>
-        <GoodCounter/>
-
         <HelloFunctional/>
         <HelloClass/> */}
 
